@@ -1,0 +1,10 @@
+Flask==2.3.2
+psycopg2-binary==2.9.6
+python-dotenv==1.0.0
+
+#env
+DB_HOST=postgres-service
+DB_NAME=postgres
+DB_USER=postgres
+DB_PASSWORD=qwerty123
+DB_PORT=5432

@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: flask-app-configmap
+data:
+  DATABASE_URL: "postgresql://postgres:$(POSTGRES_PASSWORD)@postgres-service:5432/voting_app"
+  FLASK_ENV: "production"
+  FLASK_APP: "app.py"
