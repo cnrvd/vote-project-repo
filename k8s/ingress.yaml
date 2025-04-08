@@ -4,7 +4,7 @@ metadata:
   name: flask-app-ingress
 spec:
   rules:
-  - host: voting-app.local
+  - host: voteapp.local
     http:
       paths:
       - path: /
