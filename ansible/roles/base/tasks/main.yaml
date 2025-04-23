@@ -1,0 +1,23 @@
+- name: Upgrade apt cache and uprade packages
+  apt: 
+    update_cache: true
+    uprade: dist
+
+
+- name: Install base packages
+  apt:
+    name: "{{ base_packages }}"
+    state: present
+
+- name: Enable and start UFW
+  ufw:
+    state: enabled
+    policy: deny
+    direction: incoming
+
+- name: Allow SSH
+  ufw:
+    rule: allow
+    port: 22
+    proto: tcp
+    

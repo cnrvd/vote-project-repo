@@ -1,0 +1,7 @@
+- name: Setup Home Lab Base Config
+  hosts: all
+  become: true
+  roles: 
+    - base
+
+ 
